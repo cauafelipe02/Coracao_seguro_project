@@ -1,0 +1,14 @@
+:root {
+    --cor_fundo: #DCDCDC;
+    --cor_fundo_2: #b8d6d6;
+    --cor_primaria: #aadbdb;
+    --cor_secundaria: #3e8181;
+    --cor_terciaria: #143855; 
+    --cor_quartenaria: #89b8b8;
+    --text_color: #1d1d1d;
+}
+
+/* Classe para esconder elementos */
+.escondido {
+    display: none !important;
+}

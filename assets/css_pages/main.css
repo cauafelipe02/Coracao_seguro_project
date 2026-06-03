@@ -1,0 +1,15 @@
+/* 1. Configurações de Base e Reset (Mesmo nível de pasta) */
+@import url("./variables.css");
+@import url("./login.css");
+@import url("./cadastro.css");
+@import url("./homePage.css");
+@import url("./dicas.css");
+@import url("./lembretes.css");
+@import url("./contatos.css");
+
+/* 2. Componentes Isolados (Entrando na subpasta) */
+@import url("./components/side_bar.css");
+@import url("./components/coracao.css");
+@import url("./components/graficos.css");
+@import url("./components/info-section.css");
+@import url("./components/col-esquerda.css");

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coração Seguro - Lembretes</title>
+    <link rel="stylesheet" href="./assets/css_pages/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="lembretes-page">
+    <button id="btn-menu">☰</button>
+    <aside class="container_menu" id="menu-lateral">
+        <nav>
+            <div class="logomarca" id="logomarca">
+                <i class="bi bi-heart-pulse"></i>
+                <h3>Coração Seguro</h3>
+            </div>
+            <ul>
+                <li>
+                    <a href="./homePage.html">
+                        <i class="bi bi-heart-pulse-fill"></i>
+                        <span>Painel Principal</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-capsule"></i>
+                        <span>Meus Lembretes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./painel_dicas.html">
+                        <i class="bi bi-book-half"></i>
+                        <span>Dicas de Saúde</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./painel_contatos.html">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>Meus contatos</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-lembretesPage">
+        <div class="logomarca-titulo" id="logo-Principal">
+            <i class="bi bi-heart-pulse"></i>
+            <h3>Coração Seguro</h3>
+        </div>
+
+        <!-- Configurações de Página Abaixo: -->
+        <div class="profile">
+            <i class="bi bi-bell-fill"></i>
+            <i class="bi bi-person-circle"></i>
+        </div>
+
+        <div class="conteudo-central-lembretes">
+            
+            <div class="titulo-pagina-lembretes">
+                <i class="bi bi-capsule"></i>
+                <h2>Meus Lembretes de Medicação</h2>
+            </div>
+
+            <div class="grade-remedios">
+                
+                <div class="card-remedio">
+                    <h4>Pílula Matinal (Enalapril) 10mg</h4>
+                    <div class="horario">8:00 AM</div>
+                    <div class="status-container">
+                        <span>Status: <strong class="status-tomado">Tomado</strong></span>
+                        <i class="bi bi-check-square-fill checked-icon"></i>
+                    </div>
+                </div>
+
+                <div class="card-remedio">
+                    <h4>Aspirina 100mg</h4>
+                    <div class="horario">12:00 PM</div>
+                    <div class="status-container">
+                        <span>Status: <strong class="status-pendente">Pendente</strong></span>
+                        <i class="bi bi-bell-fill alert-icon"></i>
+                    </div>
+                </div>
+
+                <div class="card-remedio">
+                    <h4>Metformina 500mg</h4>
+                    <div class="horario">8:00 PM</div>
+                    <div class="status-container">
+                        <span>Status: <strong class="status-pendente">Pendente</strong></span>
+                        <i class="bi bi-bell-fill alert-icon"></i>
+                    </div>
+                </div>
+
+                <div class="card-remedio">
+                    <h4>Suplemento Vitamínico</h4>
+                    <div class="horario">9:00 PM</div>
+                    <div class="status-container">
+                        <span>Status: <strong class="status-pendente">Pendente</strong></span>
+                        <i class="bi bi-bell-fill alert-icon"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="botao-adicionar">Adicionar Novo Lembrete [+]</button>
+        </div>
+    </main>
+</body>
+<script type="module" src="./assets/js_pages/main.js"></script>
+</html>

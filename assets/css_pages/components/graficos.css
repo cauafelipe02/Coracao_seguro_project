@@ -1,0 +1,43 @@
+@import url('../variables.css');
+
+.card-grafico{
+    width: 90%;
+    height: 35%;
+    background-color: white;
+    border-radius: 15px;
+
+    box-sizing: border-box;
+    margin: 40px 0 20px;
+    position: relative;
+    box-shadow: 0px 4px 15px 1px rgba(119, 119, 119, 0.514);
+}
+
+.card-grafico img {
+    width: 200px;
+    height: auto;
+    justify-self: center;
+    margin-top: 10px;
+
+}
+
+.card-grafico h3 {
+    align-self: flex-start;
+    margin: 10px 0px 0px 20px;
+    padding: 0;
+    color: var(--text_color);
+}
+
+@media (max-width: 600px) {
+    .card-grafico {
+        width: 80%;
+        height: 160px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .card-grafico img{
+        width: 100px;
+    }
+    .card-grafico h3{
+        font-size: 1rem;
+    }
+}

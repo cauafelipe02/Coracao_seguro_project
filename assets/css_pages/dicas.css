@@ -1,0 +1,177 @@
+/*Configurações Gerais*/
+
+@import url("./variables.css");
+
+.dicas-page {
+    min-height: 100vh; /* Garante que o fundo cubra a tela toda, mesmo com pouco conteúdo */
+    line-height: 1.5;  /* Melhora o espaçamento entre as linhas do texto automaticamente */
+    -webkit-font-smoothing: antialiased; /* Deixa as fontes mais nítidas em telas de alta resolução */
+
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 20% 80%; /* aside | conteúdo */
+}
+
+.main-dicasPage{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+
+    background-color: var(--cor_fundo);
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px 60px;
+    box-sizing: border-box;
+}
+
+.main-dicasPage .logomarca-titulo {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/*Configurações da Página Abaixo:*/
+
+.conteudo-central-dicas{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+/*Titulo da pagina*/
+
+.titulo-pagina-dicas {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    align-self: flex-start;
+}
+
+.titulo-pagina-dicas i {
+    font-size: 2rem;
+    color: #4b6584;
+}
+
+.titulo-pagina-dicas h2 {
+    font-size: 1.6rem;
+    color: var(--text_color);
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Garante que os cards fiquem um embaixo do outro */
+.lista-dicas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    max-width: 800px; /
+}
+
+/* Estilo do Card (Texto na esquerda, Imagem na direita) */
+.card-dica {
+    background-color: #ffffff;
+    border-radius: 10px; 
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /* Alinha verticalmente */
+    box-shadow: 0 4px 10px rgba(10, 10, 10, 0.1); /* Sombra leve */
+}
+
+/* Organização dos textos dentro do card */
+.texto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1; 
+    padding-right: 20px; 
+    text-align: justify;
+}
+
+.texto-card h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+
+.texto-card p {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Botões do Card */
+.btn-acao {
+    background-color: #5c8389; 
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start; 
+}
+
+.btn-secundario {
+    background-color: #7ba1a8; 
+}
+.grupo-botoes {
+    display: flex;
+    gap: 10px; 
+}
+
+.imagem-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-card img {
+    width: 200px; 
+    height: 200px;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .dicas-page{
+        grid-template-columns: 1fr;
+        overflow-x: hidden;
+    }
+    .main-dicasPage {
+        background-color: var(--cor_primaria);
+
+        overflow-x: hidden;
+        height: auto;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 35px;
+    }
+    .main-dicasPage .logomarca-titulo{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 65px;
+        z-index: 10;
+        background-color: var(--cor_primaria);
+    }
+    .conteudo-central-dicas{
+        margin-top: 35px;
+    }
+    .card-dica{
+        display: flex;
+        flex-direction: column;
+    }
+}

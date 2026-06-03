@@ -1,0 +1,178 @@
+@import url(../variables.css);
+
+.info-section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+
+    grid-column: 2;
+    grid-row: 1/3;
+    padding: 35px;
+}
+
+.info-section .bateria, 
+.info-section .status, 
+.info-section .lembretes,
+.info-section .dicas{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px 1px rgba(119, 119, 119, 0.514);
+}
+
+/*Profile Style*/
+
+.profile {
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    gap: 15px;
+    color: var(--cor_secundaria);
+}
+
+.profile .bi-bell-fill{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.profile .bi-person-circle {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+
+/*Bateria style*/
+.bateria {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bateria i{
+    font-size: 75px;
+    color: green;
+}
+
+.bateria h4{
+    color: var(--text_color);
+    font-size: 18px;
+}
+
+/*Status style*/
+
+.status {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.status i{
+    font-size: 65px;
+    color: orangered;
+}
+
+.status h4{
+    color: var(--text_color);
+    font-size: 18px;
+}
+
+/*Lembretes Style*/
+
+.lembretes {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lembretes .container {
+    display: flex;
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.lembretes i{
+    font-size: 20px;
+    color: red;
+}
+
+.lembretes h4{
+    color: var(--text_color);
+    font-size: 18px;
+    margin: 10px 0px 10px 20px;
+
+}
+
+/*Dicas style*/
+
+.dicas {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dicas h4 {
+    font-size: 18px;
+    color: var(--text_color);
+    margin: 10px 0px 0px 20px;
+}
+
+.dicas p {
+    font-size: 16px;
+    margin-left: 18px;
+    margin-right: 18px;
+    text-align: justify;
+}
+
+@media (max-width: 600px) {
+    .info-section {
+        grid-column: 1;
+        grid-row: 3;
+        width: 100%;
+        padding: 0px 15px 10px 15px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        box-sizing: border-box;
+
+    }
+
+    .info-section .bateria, 
+    .info-section .status {
+        width: 45%;
+        height: 80px;
+        margin: 0px;
+    }
+
+    .info-section .bateria i{
+        font-size: 20px;
+    }
+
+    .info-section .bateria h4{
+        font-size: 15px;
+    }
+    
+    .info-section .status i {
+        font-size: 20px;
+    }
+    .info-section .status h4{
+    font-size: 15px;
+    }
+    .profile {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 10;
+    }
+    .profile .bi-bell-fill {
+        font-size: 20px;
+    }
+    .profile .bi-person-circle{
+        font-size: 30px;
+    }
+}

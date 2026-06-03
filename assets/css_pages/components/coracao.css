@@ -1,0 +1,108 @@
+@import url('../variables.css');
+
+.card-coracao{
+    width: 90%;
+    height: 50%;
+    background-color: white;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 0;
+    position: relative;
+
+    box-shadow: 0px 4px 15px 1px rgba(119, 119, 119, 0.514);
+}
+
+.heart-bg {
+    position: absolute;
+    width: 355px;
+    height: auto;
+    z-index: 1;
+    /* Efeito bônus: Faz o coração pulsar suavemente */
+    animation: pulse 1.2s infinite alternate ease-in-out; 
+}
+
+@keyframes pulse {
+    0% { transform:scale(1); }
+    100% { transform: scale(1.05);}
+}
+
+.bpm {
+    position: relative;
+    z-index: 2; /* Garante que o texto fique na frente do coração */
+    text-align: center;
+    color: white; /* Texto branco para contrastar com o vermelho */
+    font-family: 'Inter', sans-serif;
+    margin: -15px 0px 0px;
+    padding: 0;
+
+    width: 125px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.bpm #bpm-contador {
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.bpm .unit {
+    margin-top: -10px;
+    font-size: 20px;
+}
+
+/* Alerta de Saúde */
+
+.card-alerta {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff3cd; /* Amarelo de atenção */
+    border: 3px solid #ffc107;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    width: 90%;
+    max-width: 400px;
+}
+
+.card-alerta h3 {
+    color: #856404;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.botoes-alerta button {
+    margin: 10px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#btn-sim { background-color: #28a745; color: white; }
+#btn-nao { background-color: #dc3545; color: white; }
+
+@media (max-width: 600px) {
+    .card-coracao {
+        width: 80%;
+        height: 270px;
+        margin-top: 40px;
+
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+    .heart-bg {
+        width: 60%;
+    }
+}
