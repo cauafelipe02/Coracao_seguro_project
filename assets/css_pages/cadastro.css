@@ -4,7 +4,7 @@
 .body-cadastro{
     display: flex;
     width: 100%;
-    height: 100dvh;
+    min-height: 100dvh;
     justify-content: space-around;
     margin: 0;
 }
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    min-height: 100dvh;
+    min-height: 100%;
     height: auto;
 }
 
@@ -20,7 +20,6 @@
     display: flex;
     align-items: flex-start;
     height: auto;
-    min-height: 100dvh; /* Garantir que o contêiner ocupe a altura total da janela */
     width: 100%;
     padding: 30px 30px;
     box-sizing: border-box;
@@ -40,7 +39,7 @@
     justify-content: center;
     text-align: center;
     background-color: #ffffff;
-    min-height: 100dvh;
+    min-height: 100%;
     width: 50%;
 }
 
