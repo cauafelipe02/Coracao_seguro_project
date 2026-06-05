@@ -73,9 +73,9 @@ img, picture, video, canvas, svg {
         justify-content: flex-start;
         align-items: center;
 
-        overflow: visible;
+        overflow-y: auto;
         height: auto;
-        min-height: calc(100vh - 65px);
+        min-height: calc(100dvh - 65px);
         width: 100%;
         padding-top: 65px;
         box-sizing: border-box;

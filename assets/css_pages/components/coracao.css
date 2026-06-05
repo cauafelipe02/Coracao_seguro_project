@@ -96,11 +96,11 @@
 @media (max-width: 600px) {
     .card-coracao {
         width: 80%;
-        height: 250px;
-        margin-top: 50px;
+        height: 220px;
+        margin-top: 85px;
 
         overflow: hidden;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     .heart-bg {
         width: 75%;

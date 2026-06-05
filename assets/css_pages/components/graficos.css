@@ -31,12 +31,17 @@
     .card-grafico {
         width: 80%;
         height: auto;
-        padding-bottom: 15px;
-        margin: 0 0 15px 0px;
+        min-height: 180px;
+        padding: 10px 10px 15px 10px;
+        margin: 0 0 35px 0px;
         box-sizing: border-box;
     }
     .card-grafico img{
-        width: 100px;
+        max-width: 80%;
+        width: 140px;
+        height: auto;
+        margin: 10px auto 0px;
+        justify-self: center;
     }
     .card-grafico h3{
         font-size: 1rem;
