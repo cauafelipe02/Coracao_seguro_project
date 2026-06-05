@@ -128,14 +128,13 @@
 
 @media (max-width: 600px) {
     .info-section {
-        grid-column: 1;
-        grid-row: 3;
         width: 100%;
-        padding: 0px 15px 10px 15px;
+        height: 100px;
+        padding: 0px;
+
 
         display: flex;
         flex-direction: row;
-        justify-content: center;
         align-items: center;
         gap: 10px;
         box-sizing: border-box;
@@ -146,7 +145,7 @@
     .info-section .status {
         width: 45%;
         height: 80px;
-        margin: 0px;
+        margin: 0px 0px 40px;
     }
 
     .info-section .bateria i{

@@ -30,7 +30,7 @@
 @media (max-width: 600px) {
     .card-grafico {
         width: 80%;
-        height: 160px;
+        height: 30%;
         margin: 0;
         box-sizing: border-box;
     }

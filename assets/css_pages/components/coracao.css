@@ -96,13 +96,20 @@
 @media (max-width: 600px) {
     .card-coracao {
         width: 80%;
-        height: 270px;
-        margin-top: 40px;
+        height: 250px;
+        margin-top: 50px;
 
         overflow: hidden;
         margin-bottom: 15px;
     }
     .heart-bg {
-        width: 60%;
+        width: 75%;
+        height: 100%;
+    }
+    .bpm #bpm-contador {
+        font-size: 50px;
+    }
+    .bpm .unit {
+        font-size: 15px;
     }
 }
