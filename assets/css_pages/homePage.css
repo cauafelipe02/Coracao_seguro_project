@@ -63,6 +63,7 @@ img, picture, video, canvas, svg {
     .home-page{
         grid-template-columns: 1fr;
         overflow-x: hidden;
+        min-height: 100dvh;
     }
     .main-homepage {
         background-color: var(--cor_primaria);

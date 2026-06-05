@@ -16,7 +16,7 @@
 @media (max-width: 600px) {
     .col-esquerda {
         margin: 0;
-        height: auto;
+        height: 100%;
         flex: 1;
     }
 }
