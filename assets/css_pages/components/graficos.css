@@ -31,8 +31,8 @@
     .card-grafico {
         width: 80%;
         height: auto;
-        padding-bottom: 40px;
-        margin: 0 0 20px;
+        padding-bottom: 15px;
+        margin: 0 0 15px 0px;
         box-sizing: border-box;
     }
     .card-grafico img{

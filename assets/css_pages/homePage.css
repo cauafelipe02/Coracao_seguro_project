@@ -62,17 +62,22 @@ img, picture, video, canvas, svg {
 @media (max-width: 600px) {
     .home-page{
         grid-template-columns: 1fr;
-        overflow-x: hidden;
-        min-height: 100dvh;
+        overflow: hidden;
+        min-height: 100vh;
     }
     .main-homepage {
         background-color: var(--cor_primaria);
         display: flex;
         flex-direction: column;
 
-        overflow-x: hidden;
+        justify-content: flex-start;
+        align-items: center;
+
+        overflow: visible;
         height: auto;
+        min-height: calc(100vh - 65px);
         width: 100%;
+        padding-top: 65px;
         box-sizing: border-box;
     }
     .main-homepage .logomarca-titulo{
